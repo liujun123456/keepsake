@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/white_16_radius"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹幕开关"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#191919"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <com.shunlai.ui.SwitchButton
+            android:id="@+id/sb_default"
+            android:layout_width="54dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            app:sb_background="#EEEFEF"
+            app:sb_checked="true"
+            app:sb_checked_color="#000000"
+            app:sb_checkedbutton_color="#ffffff"
+            app:sb_shadow_radius="0dp"
+            app:sb_show_indicator="false"
+            app:sb_uncheck_color="#EEEFEF"
+            app:sb_uncheckbutton_color="#ffffff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#191919"
+            android:text="精选后可以展示在弹幕中，被别人看见"
+            android:layout_marginLeft="16dp"/>
+        <com.shunlai.ui.srecyclerview.SRecyclerView
+            android:id="@+id/rv_receiver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:canRefresh="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

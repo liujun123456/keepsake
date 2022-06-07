@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Activity切换动画效果-->
+    <style name="ThemeActivity" mce_bogus="1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+        偶尔会导致Activity启动异常，导致页面卡顿
+        -->
+<!--        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+    </style>
+
+    <style name="ThemeActivity2" mce_bogus="1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity2</item>
+    </style>
+
+    <style name="SplashActivity" mce_bogus="1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--        禁用备选看情况-->
+        <!--        <item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowBackground">#0d0d0d</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="AnimationActivity" mce_bogus="1">
+        <item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+    </style>
+
+    <style name="AnimationActivity2" mce_bogus="1">
+        <item name="android:activityOpenEnterAnimation">@anim/bottom_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/bottom_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/bottom_close_exit</item>
+    </style>
+
+    <style name="AnimationSplash" mce_bogus="1">
+        <item name="android:activityCloseEnterAnimation">@anim/splash_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/splash_close_exit</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item> <!--是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent
+        </item><!--  去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item><!--屏幕背景是否变暗-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="no_trans_dialog" parent="custom_dialog">
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <style name="PopupBottomInAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/window_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/window_bottom_out</item>
+    </style>
+
+    <style name="TabLayoutStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

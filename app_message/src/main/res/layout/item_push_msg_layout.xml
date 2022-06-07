@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_msg_image"
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:src="@mipmap/default_icon"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="18dp"
+            android:layout_below="@id/iv_msg_image"
+            android:text="据说这是今年最最最最流行的穿搭万能公式，掌握此公式你也能成为时尚达人！"
+            android:textSize="16sp"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_msg_time"
+            android:layout_below="@id/tv_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:text="12月01日"
+            android:textColor="#999999"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="6dp"/>
+        <View
+            android:layout_below="@id/tv_msg_time"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:background="#F4F4F4"/>
+    </RelativeLayout>
+
+</LinearLayout>

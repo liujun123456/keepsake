@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_d_p"
+        android:layout_width="128dp"
+        android:layout_height="236dp"
+        android:background="@mipmap/image_sign_1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/sign_title_margin"
+        android:layout_marginRight="24dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="16dp">
+        <ImageView
+            android:id="@+id/iv_ugc_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"/>
+        <TextView
+            android:id="@+id/tv_ugc_title"
+            android:layout_width="96dp"
+            android:layout_height="24dp"
+            android:background="@drawable/white_16_radius"
+            android:layout_marginTop="8dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#191919"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ground_glass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5"/>
+
+
+    <!--title-->
+    <LinearLayout
+        android:id="@+id/ll_shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingTop="@dimen/title_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/alpha_7b_white_16_radius"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/shop_white_close" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shop_save"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shop_edit_save_bg"
+                android:text="保存"
+                android:textColor="#E6000000"
+                android:textSize="13sp"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.shunlai.mine.shop.ui.OwnerPrincipalView
+        android:id="@+id/label_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_top_radius_15"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RelativeLayout
+                android:id="@+id/rl_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_avatar_label"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/icon_avatar_b_a90"
+                    android:layout_centerVertical="true"/>
+                <View
+                    android:id="@+id/v_avatar_div"
+                    android:layout_width="24dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/tab_index_bg"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_decoration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="48dp">
+                <ImageView
+                    android:id="@+id/iv_decoration_label"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/icon_decoration_b_a40"
+                    android:layout_centerVertical="true"/>
+                <View
+                    android:id="@+id/v_decoration_div"
+                    android:layout_width="24dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/tab_index_bg"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="48dp">
+                <ImageView
+                    android:id="@+id/iv_sign_label"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/icon_sign_b_a40"
+                    android:layout_centerVertical="true"/>
+                <View
+                    android:id="@+id/v_sign_div"
+                    android:layout_width="24dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/tab_index_bg"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#44000000"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <LinearLayout
+        android:id="@+id/ll_star_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_padding"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/shop_white_close"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll_star_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+            <TextView
+                android:id="@+id/tv_share_we_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/share_we_chat_icon"
+                android:text="微信好友"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="24dp"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:id="@+id/tv_share_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/share_circle_icon"
+                android:text="朋友圈"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_save_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/save_local_icon"
+                android:text="存到手机"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:drawablePadding="8dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#fff2f2f2"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:id="@+id/tv_cancel_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:textSize="15sp"
+            android:textColor="#99000000"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

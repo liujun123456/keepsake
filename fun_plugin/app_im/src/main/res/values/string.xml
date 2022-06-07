@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="date_yesterday">昨天</string>
+    <string name="date_tommorow">明天</string>
+    <string name="date_year">年</string>
+    <string name="date_month">月</string>
+    <string name="date_day">天</string>
+    <string name="date_hour">时</string>
+    <string name="date_minute">分</string>
+    <string name="date_second">秒</string>
+
+    <string name="date_year_short">年</string>
+    <string name="date_month_short">月</string>
+    <string name="date_day_short">天</string>
+    <string name="date_hour_short">时</string>
+    <string name="date_minute_short">分</string>
+    <string name="date_second_short">秒</string>
+
+    <string name="device_info">手机型号:</string>
+    <string name="system_version">\n系统版本:</string>
+    <string name="sdk_version">\nSDK版本:</string>
+    <string name="tap_tips">轻触拍照，长按摄像</string>
+    <string name="record_time_tip">录制时间过短</string>
+    <string name="tap_capture">点击拍照</string>
+    <string name="tap_video">长按摄像</string>
+    <string name="audio_permission_error">需要打开录音权限</string>
+</resources>

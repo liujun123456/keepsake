@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#88000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_top_radius_bg"
+        android:layout_marginTop="44dp"
+        android:paddingTop="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_close_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/black_close_3"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加话题"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="#0d0d0d"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+            <EditText
+                android:id="@+id/et_search_hua_ti"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/hua_ti_search_bg"
+                android:padding="8dp"
+                android:drawableLeft="@mipmap/hua_ti_search_icon"
+                android:hint="找到其他话题"
+                android:textSize="14sp"
+                android:textColor="#191919"
+                android:textColorHint="#B2B2B2"
+                android:inputType="text"
+                android:layout_toLeftOf="@id/tv_cancel_search"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/tv_cancel_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:textSize="15sp"
+                android:textColor="#0d0d0d"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_hua_ti_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_result_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="没有找到话题"
+            android:textSize="16sp"
+            android:textColor="#B2B2B2"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/ll_recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#0d0d0d"
+                android:text="最近参与" />
+            <com.shunlai.ui.FlexView
+                android:id="@+id/fv_recent_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:maxLine="100"
+                app:margin_width="16dp"
+                android:layout_marginTop="16dp">
+            </com.shunlai.ui.FlexView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#0d0d0d"
+                android:text="热门" />
+
+            <com.shunlai.ui.FlexView
+                android:id="@+id/fv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:maxLine="100"
+                app:margin_width="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="64dp">
+            </com.shunlai.ui.FlexView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

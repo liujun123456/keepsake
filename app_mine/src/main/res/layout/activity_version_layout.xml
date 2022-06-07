@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本更新"
+        android:textSize="32sp"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/app_login_icon2"
+        android:layout_marginTop="107dp"/>
+    <TextView
+        android:id="@+id/tv_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前版本号：v1.0.0"
+        android:layout_marginTop="16dp"
+        android:textColor="#A0A0A0"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/do_app_update"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:background="@drawable/black_radius_24"
+        android:layout_marginTop="56dp"
+        android:text="立即更新"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="热门搜索"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold"/>
+
+    <com.shunlai.ui.FlexView
+        android:id="@+id/fv_hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:maxLine="3"
+        app:margin_width="12dp"
+        android:layout_marginTop="14dp">
+
+    </com.shunlai.ui.FlexView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="历史搜索"
+            android:textSize="16sp"
+            android:textColor="#0d0d0d"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/clear_recycle_icon"
+            android:onClick="clearHistory"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <com.shunlai.ui.FlexView
+        android:id="@+id/fv_history_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:maxLine="3"
+        app:margin_width="12dp"
+        android:layout_marginTop="14dp">
+
+
+    </com.shunlai.ui.FlexView>
+
+</LinearLayout>

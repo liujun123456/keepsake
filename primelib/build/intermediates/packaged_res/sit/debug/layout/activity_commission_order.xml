@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/include_common_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <com.zhengsr.tablib.view.flow.TabFlowLayout
+        android:id="@+id/tabfl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_order_tab_h"
+        app:tab_color="@color/c_order_tab_s"
+        app:tab_height="@dimen/d_order_tab_indicator_h"
+        app:tab_width="@dimen/d_order_tab_indicator_w"
+        app:layout_constraintTop_toBottomOf="@id/include_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/d_order_my_pad_b"
+        android:layout_marginRight="@dimen/d_order_my_pad_b"/>
+    <View
+        android:id="@+id/v_dividing_1"
+        style="@style/v_dividing_common"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabfl"/>
+    <com.shunlai.mystore.customview.ProhibitSlideLRViewpager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_dividing_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/c_order_divider"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

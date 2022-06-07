@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f7"
+    tools:context=".SDPkHtListActivity">
+    <com.shunlai.ui.srecyclerview.SRecyclerView
+        android:id="@+id/tv_pk_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:head_height="64dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:visibility="gone"
+        android:id="@+id/emply_layout">
+        <TextView
+            android:id="@+id/tv_emplay_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#B2B2B2"
+            android:textSize="@dimen/sp_16"
+            android:text="@string/pk_huti_not_my_str">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

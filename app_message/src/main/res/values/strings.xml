@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_title">消息</string>
+    <string name="attention_title">新增关注</string>
+    <string name="collect_title">点赞收藏</string>
+    <string name="comment_title">评论回复</string>
+    <string name="sys_msg_title">系统通知</string>
+    <string name="push_msg_title">推送消息</string>
+    <string name="complain_title">投诉</string>
+    <string name="complain_success_title">投诉成功</string>
+    <string name="complain_fail_title">投诉失败</string>
+    <string name="complain_hint_content">请输入投诉内容</string>
+</resources>

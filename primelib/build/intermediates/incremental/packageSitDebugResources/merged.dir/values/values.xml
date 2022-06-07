@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="after_sale_tab">
+        <item>申请售后</item>
+        <item>售后记录</item>
+    </string-array>
+    <string-array name="my_coupon_tab">
+        <item>未使用</item>
+        <item>已使用</item>
+        <item>已过期</item>
+    </string-array>
+    <string-array name="order_tab">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>已发货</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="transaction_type">
+        <item>退回中</item>
+        <item>待到账</item>
+        <item>已到账</item>
+    </string-array>
+    <color name="c_after_sale_edit">#F2F2F2</color>
+    <color name="c_after_sale_edit_hint">#4d000000</color>
+    <color name="c_bind_alipay_et_hint">#b2b2b2</color>
+    <color name="c_key">#000000</color>
+    <color name="c_logistics_infos_dot_gray">#cccccc</color>
+    <color name="c_mycoupon_item_n">#4d000000</color>
+    <color name="c_order_btn_stroke">#1a000000</color>
+    <color name="c_order_detail_btn_dividing">#1a000000</color>
+    <color name="c_order_detail_des">#66000000</color>
+    <color name="c_order_divider">#f7f7f7</color>
+    <color name="c_order_img_stroke">#0d000000</color>
+    <color name="c_order_price">#e6000000</color>
+    <color name="c_order_sku">#99000000</color>
+    <color name="c_order_tab_s">#191919</color>
+    <color name="c_order_tab_tv_def">#999999</color>
+    <color name="c_picker_indicator">#EEEEEF</color>
+    <color name="c_radio_btn_dot_n">#33000000</color>
+    <color name="c_radio_btn_soild">#08000000</color>
+    <color name="c_taobao_guide_order_store">#73000000</color>
+    <color name="c_title">#0D0D0D</color>
+    <color name="c_use_coupon_bottom_cover">#00f7f7f7</color>
+    <color name="c_withdrawable_commission">#73ffffff</color>
+    <color name="c_withdrawal_btn_bg">#2EE6D6</color>
+    <color name="c_withdrawal_fail">#F24B49</color>
+    <color name="c_withdrawal_list">#a6ffffff</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="theme_bg">#ffffff</color>
+    <dimen name="d_after_sale_bottom_btn_mar_t">8dp</dimen>
+    <dimen name="d_after_sale_des_edit_radius">8dp</dimen>
+    <dimen name="d_after_sale_edit_count_min_w">58dp</dimen>
+    <dimen name="d_after_sale_edit_min_h">80dp</dimen>
+    <dimen name="d_after_sale_edit_radius">4dp</dimen>
+    <dimen name="d_after_sale_img_radius">16dp</dimen>
+    <dimen name="d_after_sale_img_w">103dp</dimen>
+    <dimen name="d_after_sale_k_w">80dp</dimen>
+    <dimen name="d_after_sale_mar_b">48dp</dimen>
+    <dimen name="d_after_sale_select_h">56dp</dimen>
+    <dimen name="d_after_sale_tab_indicator_w">64dp</dimen>
+    <dimen name="d_after_sale_v_k_space">24dp</dimen>
+    <dimen name="d_commission_et_pad_t">8dp</dimen>
+    <dimen name="d_commission_flow_divider_h">12dp</dimen>
+    <dimen name="d_commission_my_h">136dp</dimen>
+    <dimen name="d_commission_my_num_h">80dp</dimen>
+    <dimen name="d_common_dash_W">2dp</dimen>
+    <dimen name="d_common_dividing">1dp</dimen>
+    <dimen name="d_common_dividing_small">0.5dp</dimen>
+    <dimen name="d_common_stroke_w">1.5dp</dimen>
+    <dimen name="d_common_title_h">44dp</dimen>
+    <dimen name="d_coupon_condition_mar_t">4dp</dimen>
+    <dimen name="d_coupon_dividing_h">72dp</dimen>
+    <dimen name="d_coupon_indicator_w">48dp</dimen>
+    <dimen name="d_coupon_item_radius">8dp</dimen>
+    <dimen name="d_coupon_item_stroke">2dp</dimen>
+    <dimen name="d_coupon_price_w">102dp</dimen>
+    <dimen name="d_coupon_symbol_price_alignment">2dp</dimen>
+    <dimen name="d_coupon_use_btn_h">24dp</dimen>
+    <dimen name="d_coupon_use_btn_mar_b">10dp</dimen>
+    <dimen name="d_coupon_use_btn_w">60dp</dimen>
+    <dimen name="d_coupon_view_space">8dp</dimen>
+    <dimen name="d_decoration_section_item">48.5dp</dimen>
+    <dimen name="d_decoration_section_item_pad_t">8dp</dimen>
+    <dimen name="d_dialog_address_result_dra_pad">8dp</dimen>
+    <dimen name="d_dialog_btn_mar">17dp</dimen>
+    <dimen name="d_dialog_btn_mar_b">42dp</dimen>
+    <dimen name="d_dialog_btn_w">117dp</dimen>
+    <dimen name="d_dialog_confirm_radius">16dp</dimen>
+    <dimen name="d_dialog_mar_l">30dp</dimen>
+    <dimen name="d_dialog_pad_t">24dp</dimen>
+    <dimen name="d_dialog_refund_reason_mar_t">112dp</dimen>
+    <dimen name="d_dialog_select_reveiving_address_mar_t">104dp</dimen>
+    <dimen name="d_fill_order_address_def_h">24dp</dimen>
+    <dimen name="d_fill_order_address_def_w">40dp</dimen>
+    <dimen name="d_fill_order_btn_pad_l">8dp</dimen>
+    <dimen name="d_font_coupon_receive">10sp</dimen>
+    <dimen name="d_font_coupon_use_des">11sp</dimen>
+    <dimen name="d_font_logistics_status">18sp</dimen>
+    <dimen name="d_font_mycoupon_price">24sp</dimen>
+    <dimen name="d_font_myorder">32sp</dimen>
+    <dimen name="d_font_order_btn">15sp</dimen>
+    <dimen name="d_font_price_total">13sp</dimen>
+    <dimen name="d_font_prompt">14sp</dimen>
+    <dimen name="d_font_sku">12sp</dimen>
+    <dimen name="d_font_tab">16sp</dimen>
+    <dimen name="d_font_title">17sp</dimen>
+    <dimen name="d_invoice_address_result_h">72dp</dimen>
+    <dimen name="d_logistics_info_dot_w">6dp</dimen>
+    <dimen name="d_logistics_info_item_pad_b">28dp</dimen>
+    <dimen name="d_logistics_info_iv_w">24dp</dimen>
+    <dimen name="d_logistics_key_w">80dp</dimen>
+    <dimen name="d_order_appbar">96dp</dimen>
+    <dimen name="d_order_detail_address_dot">32dp</dimen>
+    <dimen name="d_order_detail_address_mar_l">12dp</dimen>
+    <dimen name="d_order_detail_bottom_btn_h">48dp</dimen>
+    <dimen name="d_order_detail_bottom_h">64dp</dimen>
+    <dimen name="d_order_detail_copy_mar_l">8dp</dimen>
+    <dimen name="d_order_detail_dra_pad">4dp</dimen>
+    <dimen name="d_order_detail_img_mar_b">8dp</dimen>
+    <dimen name="d_order_detail_img_radius">10dp</dimen>
+    <dimen name="d_order_detail_img_w">112dp</dimen>
+    <dimen name="d_order_detail_pay_h">32dp</dimen>
+    <dimen name="d_order_detail_price_mar_t">24dp</dimen>
+    <dimen name="d_order_item_btn_h">40dp</dimen>
+    <dimen name="d_order_item_btn_min_w">80dp</dimen>
+    <dimen name="d_order_item_divider_h">8dp</dimen>
+    <dimen name="d_order_item_img_radius">8dp</dimen>
+    <dimen name="d_order_item_img_w">64dp</dimen>
+    <dimen name="d_order_item_pad_t">24dp</dimen>
+    <dimen name="d_order_my_pad_b">16dp</dimen>
+    <dimen name="d_order_tab_h">56dp</dimen>
+    <dimen name="d_order_tab_indicator_h">2dp</dimen>
+    <dimen name="d_order_tab_indicator_w">32dp</dimen>
+    <dimen name="d_pay_need_mar_t">48dp</dimen>
+    <dimen name="d_pay_result_divider_mar_t">32dp</dimen>
+    <dimen name="d_pickerview_h">320dp</dimen>
+    <dimen name="d_pickerview_indicator_h">36dp</dimen>
+    <dimen name="d_pickerview_indicator_radius">8dp</dimen>
+    <dimen name="d_pickerview_mar_t">32dp</dimen>
+    <dimen name="d_pickerview_pad_l">50dp</dimen>
+    <dimen name="d_select_address_item_h">40dp</dimen>
+    <dimen name="d_select_payment_method_item_h">72dp</dimen>
+    <dimen name="d_select_payment_method_mar_t">64dp</dimen>
+    <dimen name="d_side_index_bar_item_h">20dp</dimen>
+    <dimen name="d_side_index_bar_mar_t">22dp</dimen>
+    <dimen name="d_switch_thumb_stroke">2dp</dimen>
+    <dimen name="d_switch_w">54dp</dimen>
+    <dimen name="d_toast_pad_t">10dp</dimen>
+    <dimen name="d_toast_radius">20dp</dimen>
+    <dimen name="d_use_coupon_mar_t">14dp</dimen>
+    <dimen name="d_use_coupon_receive_h">16dp</dimen>
+    <dimen name="d_use_coupon_receive_w">41dp</dimen>
+    <dimen name="d_use_coupon_unreceive_radius">2dp</dimen>
+    <dimen name="t_dp_111">111dp</dimen>
+    <dimen name="t_dp_136">136dp</dimen>
+    <dimen name="t_dp_16">16dp</dimen>
+    <dimen name="t_dp_164">164dp</dimen>
+    <dimen name="t_dp_24">24dp</dimen>
+    <dimen name="t_dp_32">32dp</dimen>
+    <dimen name="t_dp_4">4dp</dimen>
+    <dimen name="t_dp_8">8dp</dimen>
+    <dimen name="t_sp_13">13sp</dimen>
+    <dimen name="t_sp_14">14sp</dimen>
+    <dimen name="t_sp_16">16sp</dimen>
+    <string name="app_name">wu</string>
+    <string name="apply_invoicing">申请开票</string>
+    <string name="apply_refund">申请退款</string>
+    <string name="collect">收</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="copy">复制</string>
+    <string name="coupon">优惠券</string>
+    <string name="courier_number">快递单号</string>
+    <string name="creat_time">创建时间</string>
+    <string name="deduction_price">-¥ %1$s</string>
+    <string name="delivery_time">发货时间</string>
+    <string name="distribution_company">配送公司</string>
+    <string name="evaluation_str">评价</string>
+    <string name="freight">运费</string>
+    <string name="freight_weight">（%1$skg）</string>
+    <string name="goods_price">商品金额</string>
+    <string name="immediate_payment">立即付款</string>
+    <string name="in_transit">运输中</string>
+    <string name="logistics_company">物流公司</string>
+    <string name="modify">修改</string>
+    <string name="net_fail">code=%1$s%2$s</string>
+    <string name="net_fail_connect">请求服务器异常！请检查网络连接后重试</string>
+    <string name="net_fail_throw">网络请求异常！%1$s</string>
+    <string name="net_loading">加载中</string>
+    <string name="net_no_data">暂无数据！</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="order_code">订单编号</string>
+    <string name="order_code_title">订单号：</string>
+    <string name="order_count">x%1$d</string>
+    <string name="order_count_one">x1</string>
+    <string name="order_count_total">共%1$d件 合计：</string>
+    <string name="order_detail_phone">  %1$s</string>
+    <string name="order_finish_time">订单完成时间：%1$s</string>
+    <string name="order_handle_finish_time">处理结束时间：%1$s</string>
+    <string name="order_my">我的订单</string>
+    <string name="order_placed">已下单</string>
+    <string name="order_price">¥ %1$s</string>
+    <string name="order_price_without_space">¥%1$s</string>
+    <string name="pay_time">付款时间</string>
+    <string name="prompt_copy">复制成功！</string>
+    <string name="publish_notes">发布笔记</string>
+    <string name="receiving_info">收货信息</string>
+    <string name="receiving_info_v">%1$s，%2$s，%3$s</string>
+    <string name="refunding">退款中</string>
+    <string name="sending">派送中</string>
+    <string name="shipped">已发货</string>
+    <string name="signed_in">已签收</string>
+    <string name="sku_separator">|</string>
+    <string name="str_address_detail">详细地址</string>
+    <string name="str_address_detail_hint">街道、楼牌号等</string>
+    <string name="str_after_sale">售后/退款</string>
+    <string name="str_after_sale_cancel">售后取消</string>
+    <string name="str_after_sale_code">售后编号：</string>
+    <string name="str_after_sale_type">选择售后类型</string>
+    <string name="str_after_sales_commission_order">售后佣金订单</string>
+    <string name="str_after_sales_progress">售后进度</string>
+    <string name="str_agree">同意</string>
+    <string name="str_alipay">支付宝</string>
+    <string name="str_alipay_account">支付宝账号</string>
+    <string name="str_alipay_account_hint">请输入支付宝账号</string>
+    <string name="str_alipay_account_real_card_id">支付宝账户实名认证身份证号码</string>
+    <string name="str_alipay_account_real_card_id_hint">请输入真实身份证号码</string>
+    <string name="str_alipay_account_real_name">支付宝账户实名认证姓名</string>
+    <string name="str_alipay_account_real_name_hint">请输入真实姓名</string>
+    <string name="str_amount_money">金额</string>
+    <string name="str_apply_after_sale">申请售后</string>
+    <string name="str_apply_count">申请数量x%1$d</string>
+    <string name="str_apply_success">申请成功</string>
+    <string name="str_apply_time">申请时间</string>
+    <string name="str_apply_withdrawal">申请提现</string>
+    <string name="str_apply_withdrawal_prompt">为了保证您的资金安全，请由本人操作</string>
+    <string name="str_audit_time">审核时间</string>
+    <string name="str_binding">绑定</string>
+    <string name="str_binding_alipay">绑定支付宝</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_cancel_after_sale">确定要取消售后申请吗？</string>
+    <string name="str_cancel_after_sale_k">取消售后</string>
+    <string name="str_cancel_pay">取消支付</string>
+    <string name="str_cancel_time">取消时间</string>
+    <string name="str_cancel_time_with_smbol">取消时间：%1$s</string>
+    <string name="str_cashier">收银台</string>
+    <string name="str_closed">已关闭</string>
+    <string name="str_commission_flow">佣金流水</string>
+    <string name="str_commission_order">佣金订单</string>
+    <string name="str_commodity_details">商品明细</string>
+    <string name="str_company">单位</string>
+    <string name="str_confirm">确定</string>
+    <string name="str_consignee">收货人</string>
+    <string name="str_consignee_hint">请填写收货人姓名</string>
+    <string name="str_contact_customer_service">联系客服</string>
+    <string name="str_coupon_money">-¥%1$s</string>
+    <string name="str_coupon_name_money">%1$s  -¥%2$s</string>
+    <string name="str_create_address">新增收货地址</string>
+    <string name="str_current_balance">当前佣金余额%1$s元</string>
+    <string name="str_default">默认</string>
+    <string name="str_distribution">配送</string>
+    <string name="str_distribution_shunfeng">顺丰速运</string>
+    <string name="str_earn">赚：</string>
+    <string name="str_fail_reason">失败原因</string>
+    <string name="str_fail_reason_with_symbol">失败原因：</string>
+    <string name="str_fill_order">填写订单</string>
+    <string name="str_fill_receiving_infos">请添加收货信息</string>
+    <string name="str_finish">完成</string>
+    <string name="str_finish_time">完成时间</string>
+    <string name="str_full_currency">全场通用</string>
+    <string name="str_full_minus">满%1$s可用</string>
+    <string name="str_full_withdrawal">全部提现</string>
+    <string name="str_had_review">已审核</string>
+    <string name="str_hint_input">请输入</string>
+    <string name="str_hint_input_code">请输入单号</string>
+    <string name="str_hot_city">热门城市</string>
+    <string name="str_input_courier_number">输入快递单号</string>
+    <string name="str_input_express_infos">输入物流信息</string>
+    <string name="str_invoice">发票</string>
+    <string name="str_invoice_content">发票内容</string>
+    <string name="str_invoice_content_statement">发票内容选项已根据税法调整，具体以展示为准</string>
+    <string name="str_invoice_disable">不开发票</string>
+    <string name="str_invoice_header">发票抬头</string>
+    <string name="str_invoice_statement">发票在订单完成后30天内开具，开具后寄送至订单收货地址</string>
+    <string name="str_invoice_type">发票类型</string>
+    <string name="str_location">所在地区</string>
+    <string name="str_location_hint">省市区县、乡镇等</string>
+    <string name="str_logistics_information">物流信息</string>
+    <string name="str_merchant_processing">商家处理申请</string>
+    <string name="str_modify_express_order_no">修改快递单号</string>
+    <string name="str_my_alipay">我的支付宝</string>
+    <string name="str_my_commission">我的佣金</string>
+    <string name="str_my_coupon">我的优惠券</string>
+    <string name="str_my_withdrawal">我的提现</string>
+    <string name="str_name_phone">%1$s  %2$s</string>
+    <string name="str_need_pay">需支付</string>
+    <string name="str_need_pay_time">需付款：%1$s  剩余：%2$d分%3$d秒</string>
+    <string name="str_no_available">无可用</string>
+    <string name="str_odd_numbers">单号：%1$s</string>
+    <string name="str_only_goods">仅限指定商品</string>
+    <string name="str_only_supplier">仅限指定供应商</string>
+    <string name="str_optional_filling">选填</string>
+    <string name="str_order_cancelled">已取消</string>
+    <string name="str_order_completed">已完成</string>
+    <string name="str_order_list">订单列表</string>
+    <string name="str_order_pending_payment">待付款</string>
+    <string name="str_order_received_goods">已收货</string>
+    <string name="str_order_refunded">已退款</string>
+    <string name="str_order_shipped">已发货</string>
+    <string name="str_order_to_be_shipped">待发货</string>
+    <string name="str_ordinary_electronic_invoice">普通电子发票</string>
+    <string name="str_paper_invoice">纸质发票</string>
+    <string name="str_pay_count_down">请在  %1$d分%2$d秒  内完成支付</string>
+    <string name="str_pay_count_down_finish">支付超时</string>
+    <string name="str_pay_fail">支付失败，请重新支付</string>
+    <string name="str_pay_fail_default">可能是网络系统异常，请稍后在付款</string>
+    <string name="str_pay_money">支付金额</string>
+    <string name="str_pay_result">支付结果</string>
+    <string name="str_pay_success">订单支付成功</string>
+    <string name="str_pay_time">支付时间</string>
+    <string name="str_pay_type">支付方式</string>
+    <string name="str_payee_information">收票人信息</string>
+    <string name="str_payment_date">到账时间</string>
+    <string name="str_personal">个人</string>
+    <string name="str_personal_name">个人名称</string>
+    <string name="str_phone">手机号码</string>
+    <string name="str_phone_hint">请填写收货人手机号</string>
+    <string name="str_phone_num">手机号</string>
+    <string name="str_phone_num_hint">请输入手机号</string>
+    <string name="str_please_fill_in">请填写</string>
+    <string name="str_processing">处理中</string>
+    <string name="str_prompt_cancel_order">订单取消后无法恢复</string>
+    <string name="str_prompt_confirm_receive">请收到商品确认无误后再确认收货</string>
+    <string name="str_prompt_del_address">是否删除该收货地址</string>
+    <string name="str_re_apply">重新申请</string>
+    <string name="str_reapply">再次申请</string>
+    <string name="str_received">已到账</string>
+    <string name="str_receiving_address">收货地址</string>
+    <string name="str_receiving_address_creat">新建收货地址</string>
+    <string name="str_receiving_address_edit">编辑收货地址</string>
+    <string name="str_receiving_address_with_symbol">[收货地址]%1$s</string>
+    <string name="str_refresh_verification_code">%1$d秒后重新获取</string>
+    <string name="str_refund_code">退款编号</string>
+    <string name="str_refund_count">退款数量</string>
+    <string name="str_refund_des">退款说明</string>
+    <string name="str_refund_fail">退款失败</string>
+    <string name="str_refund_money">退款金额</string>
+    <string name="str_refund_only">仅退款</string>
+    <string name="str_refund_reason">退款原因</string>
+    <string name="str_refund_reason_1">不想要了</string>
+    <string name="str_refund_reason_2">无快递信息</string>
+    <string name="str_refund_reason_3">包裹为空</string>
+    <string name="str_refund_reason_4">已拒签包裹</string>
+    <string name="str_refund_reason_5">快递长时间未送达</string>
+    <string name="str_refund_reason_6">商品质量存在问题</string>
+    <string name="str_refund_reason_7">其他</string>
+    <string name="str_refund_reason_select">请选择退款原因</string>
+    <string name="str_refund_success">退款成功</string>
+    <string name="str_refund_type">退款类型</string>
+    <string name="str_refund_voucher">退款凭证</string>
+    <string name="str_refund_voucher_prompt">请上传退款凭证</string>
+    <string name="str_refund_wuli_com_select">请选择物流公司</string>
+    <string name="str_repay">重新支付</string>
+    <string name="str_return_code">寄回单号：</string>
+    <string name="str_return_commission">退回佣金：</string>
+    <string name="str_return_infos">退货信息</string>
+    <string name="str_return_refund">退货退款</string>
+    <string name="str_return_return">退货寄回</string>
+    <string name="str_return_tag_address">退货寄到以下地址</string>
+    <string name="str_save">保存</string>
+    <string name="str_see_order">查看订单</string>
+    <string name="str_select_payment_method">选择支付方式</string>
+    <string name="str_select_please">请选择</string>
+    <string name="str_select_region">请选择所在地区</string>
+    <string name="str_select_time">请选择时间</string>
+    <string name="str_select_transaction_type">请选择交易类型</string>
+    <string name="str_set_default_address">设置默认地址</string>
+    <string name="str_set_default_address_prompt">提醒：每次下单会默认推荐该地址</string>
+    <string name="str_settled_commission">已结算佣金</string>
+    <string name="str_settled_commission_tobe">待结算佣金</string>
+    <string name="str_shared_links_orders">分享的链接产生的订单</string>
+    <string name="str_sign_contract_prompt">还差一步就可以提现了\n确定去完成签约吗？</string>
+    <string name="str_str_return_code_k">快递寄回</string>
+    <string name="str_submit">提交</string>
+    <string name="str_submit_order">提交订单</string>
+    <string name="str_submit_withdrawal_apply">提交提现申请</string>
+    <string name="str_symbol">¥</string>
+    <string name="str_tag">标签</string>
+    <string name="str_tag_compony">公司</string>
+    <string name="str_tag_home">家</string>
+    <string name="str_tag_school">学校</string>
+    <string name="str_taobao_guide_order">淘宝导购订单</string>
+    <string name="str_term_validity">%1$s-%2$s</string>
+    <string name="str_to_pay">使用%1$s支付</string>
+    <string name="str_tobe_received">待到账</string>
+    <string name="str_total">合计：</string>
+    <string name="str_transaction_type">交易类型</string>
+    <string name="str_unavailable_coupons">%1$d张不可用优惠券</string>
+    <string name="str_under_review">审核中</string>
+    <string name="str_unreceive">未领取</string>
+    <string name="str_use">去使用</string>
+    <string name="str_use_coupon">使用优惠券</string>
+    <string name="str_user_service_agreement">《用户服务协议》</string>
+    <string name="str_uunder_review">等审核</string>
+    <string name="str_verification_code">验证码</string>
+    <string name="str_verification_code_get">获取验证码</string>
+    <string name="str_verification_code_hint">请输入验证码</string>
+    <string name="str_wait_merchant_processing">等待商家处理</string>
+    <string name="str_wait_merchant_receive">等待商家收货</string>
+    <string name="str_wait_review">请耐心等待审核</string>
+    <string name="str_wechat_pay">微信支付</string>
+    <string name="str_withdrawable_commission">可提现佣金</string>
+    <string name="str_withdrawal">提现</string>
+    <string name="str_withdrawal_account">提现账户</string>
+    <string name="str_withdrawal_amount">提现金额</string>
+    <string name="str_withdrawal_detail">提现详情</string>
+    <string name="str_withdrawal_fail">提现失败</string>
+    <string name="str_withdrawal_list">提现列表</string>
+    <string name="str_withdrawal_record_list">提现记录列表</string>
+    <string name="str_withdrawal_sign_contract">提现签约</string>
+    <string name="str_withdrawal_success">提现成功</string>
+    <string name="str_withdrawal_to_alipay">提现到支付宝</string>
+    <string name="str_withdrawing_cash">正在提现</string>
+    <string name="str_withdrawing_cash_prompt">确认要提现到支付宝账户\n%1$s吗？</string>
+    <string name="str_withdrawn_commission">已提现佣金</string>
+    <string name="str_yestoday">昨天%1$s</string>
+    <string name="total">合计</string>
+    <string name="transaction_time">成交时间</string>
+    <string name="view_logistics">查看物流</string>
+    <style name="AppThemePrime" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="background">@color/theme_bg</item>
+        <item name="android:windowBackground">@color/theme_bg</item>
+    </style>
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- dim:模糊的 阴影效果 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="btn_after_sale_edit" parent="tv_after_sale_edit">
+        <item name="android:background">@drawable/shape_after_sale_edit</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="btn_dialog_refund_reason_emphasize" parent="tv_dialog_refund_reason_white">
+        <item name="android:background">@drawable/shape_order_btn_emphasize</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="btn_disable_select" parent="tv_disable_select">
+        <item name="android:background">@drawable/shape_receiving_address_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/d_order_detail_bottom_btn_h</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <style name="btn_order_def" parent="tv_order_btn_black">
+        <item name="android:background">@drawable/shape_order_btn</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="btn_order_detail">
+        <item name="android:background">@drawable/selector_order_detail_refund_status</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/selector_refund_expess_tv</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="btn_order_emphasize" parent="tv_order_btn_white">
+        <item name="android:background">@drawable/shape_order_btn_emphasize</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="btn_raido_check" parent="tv_after_sale_type">
+        <item name="android:background">@drawable/selector_after_sale_type</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="common_viewgroup_click">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/d_after_sale_select_h</item>
+        <item name="android:padding">@dimen/d_order_my_pad_b</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="common_viewgroup_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/d_after_sale_select_h</item>
+        <item name="android:layout_marginLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:layout_marginRight">@dimen/d_order_my_pad_b</item>
+    </style>
+    <style name="edit_create_receiving_address" parent="tv_order_price_black">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColorHint">@color/c_after_sale_edit_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="edit_w_w_bind_alipay_k" parent="tv_order_title_black">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/d_commission_et_pad_t</item>
+        <item name="android:paddingBottom">@dimen/d_commission_et_pad_t</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/c_bind_alipay_et_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="style_weight_common_v">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="tv_address_detail_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_logistics_status</item>
+    </style>
+    <style name="tv_address_tag_black">
+        <item name="android:textColor">@color/c_title</item>
+        <item name="android:textSize">@dimen/d_font_sku</item>
+    </style>
+    <style name="tv_after_sale_detail_selector">
+        <item name="android:textColor">@color/selector_logitics_infos_des</item>
+        <item name="android:textSize">@dimen/d_font_sku</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="tv_after_sale_dialog_prompt">
+        <item name="android:textColor">@color/c_title</item>
+        <item name="android:textSize">@dimen/d_font_tab</item>
+    </style>
+    <style name="tv_after_sale_edit">
+        <item name="android:textColor">@color/c_title</item>
+        <item name="android:textSize">@dimen/d_font_order_btn</item>
+    </style>
+    <style name="tv_after_sale_k" parent="tv_order_detail_code_black">
+        <item name="android:layout_width">@dimen/d_after_sale_k_w</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/d_order_my_pad_b</item>
+    </style>
+    <style name="tv_after_sale_type">
+        <item name="android:textColor">@color/selector_after_sale_type</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="tv_after_sale_v" parent="tv_order_detail_code_black">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">@dimen/d_order_item_pad_t</item>
+    </style>
+    <style name="tv_bind_aplipay_k">
+        <item name="android:textColor">@color/c_order_tab_s</item>
+        <item name="android:textSize">@dimen/d_font_tab</item>
+    </style>
+    <style name="tv_bind_aplipay_service_agreement">
+        <item name="android:textColor">@color/c_order_tab_s</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="tv_blod_key_black">
+        <item name="android:textColor">@color/c_key</item>
+        <item name="android:textSize">@dimen/d_font_myorder</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tv_commission_flow_condition_black">
+        <item name="android:textColor">@color/c_order_tab_s</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_commission_num_k">
+        <item name="android:textColor">@color/c_order_detail_des</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="tv_coupon_use_des_gray">
+        <item name="android:textColor">@color/c_order_detail_des</item>
+        <item name="android:textSize">@dimen/d_font_coupon_use_des</item>
+    </style>
+    <style name="tv_dialog_prompt_title_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_title</item>
+    </style>
+    <style name="tv_dialog_refund_reason_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/d_font_title</item>
+    </style>
+    <style name="tv_disable_select">
+        <item name="android:textSize">@dimen/d_font_title</item>
+        <item name="android:textColor">@color/selector_receiving_address_btn_tv</item>
+    </style>
+    <style name="tv_fill_order_k" parent="tv_order_price_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/d_after_sale_k_w</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+    </style>
+    <style name="tv_fill_order_v" parent="tv_order_price_black">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="tv_logistics_infos_des_selector">
+        <item name="android:textColor">@color/selector_logitics_infos_des</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_logistics_infos_status_selector">
+        <item name="android:textColor">@color/selector_logitics_infos_des</item>
+        <item name="android:textSize">@dimen/d_font_tab</item>
+    </style>
+    <style name="tv_logistics_infos_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_logistics_status_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_logistics_status</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tv_my_withdrawal_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/d_font_tab</item>
+    </style>
+    <style name="tv_mycoupon_btn_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/d_font_sku</item>
+    </style>
+    <style name="tv_order_btn_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_order_btn</item>
+    </style>
+    <style name="tv_order_btn_white">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/d_font_order_btn</item>
+    </style>
+    <style name="tv_order_count_total_black">
+        <item name="android:textColor">@color/c_title</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="tv_order_detail_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="tv_order_detail_code_black">
+        <item name="android:textColor">@color/c_order_sku</item>
+        <item name="android:textSize">@dimen/d_font_price_total</item>
+    </style>
+    <style name="tv_order_detail_des_gray">
+        <item name="android:textColor">@color/c_order_detail_des</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_order_detail_freight_gray">
+        <item name="android:textColor">@color/c_order_tab_tv_def</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_order_detail_status_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_tab</item>
+    </style>
+    <style name="tv_order_price_black">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_order_price_total_bold">
+        <item name="android:textColor">@color/c_order_price</item>
+        <item name="android:textSize">@dimen/d_font_mycoupon_price</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tv_order_sku_black">
+        <item name="android:textColor">@color/c_order_sku</item>
+        <item name="android:textSize">@dimen/d_font_sku</item>
+    </style>
+    <style name="tv_order_title_black">
+        <item name="android:textColor">@color/c_title</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_pay_need">
+        <item name="android:textColor">@color/c_order_sku</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_pay_result_k" parent="tv_pay_need">
+        <item name="android:layout_width">@dimen/d_after_sale_k_w</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/d_order_my_pad_b</item>
+        <item name="android:layout_marginLeft">@dimen/d_order_item_pad_t</item>
+    </style>
+    <style name="tv_pay_result_v" parent="tv_commission_flow_condition_black">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/d_order_item_pad_t</item>
+    </style>
+    <style name="tv_prompt_black">
+        <item name="android:textColor">@color/c_key</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+    <style name="tv_receiving_address_result" parent="w_w_after_sale_key">
+        <item name="android:drawableRight">@drawable/selector_province_city_area_dra</item>
+        <item name="android:drawablePadding">@dimen/d_dialog_address_result_dra_pad</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxEms">7</item>
+    </style>
+    <style name="tv_selector_withdrawal_status">
+        <item name="android:textColor">@color/selector_withdrawal_status</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="tv_set_default_address_prompt">
+        <item name="android:textColor">@color/c_order_detail_des</item>
+        <item name="android:textSize">@dimen/d_font_sku</item>
+    </style>
+    <style name="tv_title_black">
+        <item name="android:textColor">@color/c_title</item>
+        <item name="android:textSize">@dimen/d_font_title</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="tv_w_w_bind_alipay_k" parent="tv_bind_aplipay_k">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:layout_marginTop">@dimen/d_order_my_pad_b</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="tv_withdrawal_list_white">
+        <item name="android:textColor">@color/c_withdrawal_list</item>
+        <item name="android:textSize">@dimen/d_font_prompt</item>
+    </style>
+    <style name="v_dividing">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d_order_item_divider_h</item>
+        <item name="android:background">@color/c_order_divider</item>
+    </style>
+    <style name="v_dividing_after_sale">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d_common_dividing</item>
+        <item name="android:background">@color/c_order_detail_btn_dividing</item>
+    </style>
+    <style name="v_dividing_after_sale_mar_b">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d_after_sale_mar_b</item>
+        <item name="android:background">@color/c_order_divider</item>
+    </style>
+    <style name="v_dividing_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d_common_dividing</item>
+        <item name="android:background">@color/c_order_divider</item>
+    </style>
+    <style name="v_dividing_common_small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/d_common_dividing_small</item>
+        <item name="android:background">@color/c_order_btn_stroke</item>
+    </style>
+    <style name="v_dividing_common_small_w_0">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/d_common_dividing_small</item>
+        <item name="android:background">@color/c_order_btn_stroke</item>
+    </style>
+    <style name="w_m_radio_btn" parent="tv_order_count_total_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/d_order_my_pad_b</item>
+        <item name="android:paddingRight">@dimen/d_order_my_pad_b</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+    <style name="w_w_after_sale_key" parent="tv_order_price_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <declare-styleable name="SideIndexBar">
+        <attr format="dimension" name="cpIndexBarTextSize"/>
+        <attr format="dimension" name="cpIndexItemHeight"/>
+        <attr format="color" name="cpIndexBarNormalTextColor"/>
+        <attr format="color" name="cpIndexBarSelectedTextColor"/>
+    </declare-styleable>
+</resources>

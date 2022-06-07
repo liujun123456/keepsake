@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/abl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/ctl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:collapsedTitleGravity="center"
+                app:collapsedTitleTextAppearance="@style/tv_title_black"
+                app:contentScrim="@android:color/transparent"
+                app:expandedTitleGravity="bottom|center_horizontal"
+                app:expandedTitleMarginBottom="@dimen/d_order_my_pad_b"
+                app:expandedTitleTextAppearance="@style/tv_blod_key_black"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="pin">
+                    <TextView
+                        android:id="@+id/tv_hot_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_hot_city"
+                        android:textSize="@dimen/d_font_prompt"
+                        android:textColor="@color/c_after_sale_edit_hint"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:paddingLeft="@dimen/d_order_my_pad_b"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_hot_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/tv_hot_city"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:paddingTop="@dimen/d_order_my_pad_b"
+                        tools:listitem="@layout/rv_header_hot_city_item"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cp_city_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:paddingLeft="@dimen/d_order_my_pad_b"
+                    android:paddingRight="@dimen/d_order_my_pad_b"
+                    tools:listitem="@layout/rv_item_select_receiving_address"/>
+
+                <TextView
+                    android:id="@+id/cp_overlay"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    tools:visibility="gone"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    style="@style/tv_order_price_black"
+                    android:background="@android:color/holo_red_light"/>
+                <!--右侧字母导航-->
+                <com.shunlai.mystore.customview.SideIndexBar
+                    android:id="@+id/cp_side_index_bar"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:cpIndexBarTextSize="@dimen/d_font_coupon_use_des"
+                    app:cpIndexBarNormalTextColor="@color/c_order_sku"
+                    app:cpIndexBarSelectedTextColor="@color/c_order_sku"
+                    app:cpIndexItemHeight="@dimen/d_side_index_bar_item_h"
+                    android:layout_marginTop="@dimen/d_side_index_bar_mar_t"/>
+            </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

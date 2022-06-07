@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/message_white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <com.shunlai.ui.ListenerScrollView
+        android:id="@+id/sl_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_submit"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_page_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/complain_title"
+                android:textColor="#0D0D0D"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            <com.shunlai.ui.EditTextWithScrollView
+                android:id="@+id/et_complain_content"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@null"
+                android:layout_marginTop="20dp"
+                android:hint="@string/complain_hint_content"
+                android:gravity="top|left"
+                android:textSize="14sp"
+                android:maxLength="200"
+                android:inputType="textMultiLine"
+                android:textColor="@color/main_color"
+                android:textColorHint="#B5B5B5"
+                android:imeOptions="actionSend"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <TextView
+                    android:id="@+id/tv_count_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textSize="11sp"
+                    android:textColor="#B5B5B5"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#F4F4F4"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/tv_complain_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上传证据（0）"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/main_color"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <com.shunlai.ui.EnlargedRecyclerView
+                android:id="@+id/rv_complain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"/>
+
+
+        </LinearLayout>
+    </com.shunlai.ui.ListenerScrollView>
+
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/black_radius_24_bg"
+        android:text="提交"
+        android:textColor="@color/message_white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
+

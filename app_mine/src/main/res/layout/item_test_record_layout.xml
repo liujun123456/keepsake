@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:padding="16dp">
+    <RelativeLayout
+        android:id="@+id/ll_mine_info"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/oval_white_radius">
+            <ImageView
+                android:id="@+id/iv_mine_avatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_mine_ring"
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/star_ring_icon"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:text="真的害怕猫叫"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_compare_logo"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@mipmap/icon_test_right"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ll_mine_info"/>
+    <RelativeLayout
+        android:id="@+id/ll_other_info"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_compare_logo"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/oval_white_radius">
+            <ImageView
+                android:id="@+id/iv_other_avatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_other_ring"
+            android:layout_width="48dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/star_ring_icon"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tv_other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:text="真的害怕猫叫"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token频率"
+            android:textSize="13sp"
+            android:textColor="#A6FFFFFF"
+            android:layout_above="@id/tv_hz"/>
+        <TextView
+            android:id="@+id/tv_hz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="412 Hz"
+            android:textStyle="bold"
+            android:textColor="#FF2EE6D6"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

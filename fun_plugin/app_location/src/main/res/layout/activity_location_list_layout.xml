@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/tv_page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0D0D0D"
+        android:textSize="32sp"
+        android:text="我的地址"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_add_new_loc"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/black_radius_24_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:text="添加新地址"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:onClick="addAddress"
+        android:visibility="gone"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_loc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_add_new_loc"
+        android:layout_below="@id/tv_page_name"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/loc_empty_icon"
+            android:layout_marginTop="112dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您暂时没有保存的地址"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#B2B2B2"/>
+
+        <TextView
+            android:id="@+id/tv_add_address"
+            android:layout_width="123dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="添加新地址"
+            android:textColor="#ffffff"
+            android:background="@drawable/black_radius_24_bg"
+            android:textSize="15sp"
+            android:onClick="addAddress"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

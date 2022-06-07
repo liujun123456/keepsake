@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_style_title"
+    tools:context=".picker.PhotoPickerActivity">
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/ll_choose_img"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_above="@id/ll_bottom"
+        android:background="@color/black_style_title"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:visibility="gone">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_choose_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/black_style_title"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/ll_choice_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+            <TextView
+                android:id="@+id/tv_choose_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="相册"/>
+
+            <TextView
+                android:id="@+id/tv_choose_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white99"
+                android:text="视频"
+                android:layout_marginLeft="37dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_next_action"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_cout_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选 3/7    长按素材可排序"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:textColor="#B2B2B2"/>
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="下一步"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#010101"
+                android:layout_marginRight="18dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/photo_next_action_bg"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

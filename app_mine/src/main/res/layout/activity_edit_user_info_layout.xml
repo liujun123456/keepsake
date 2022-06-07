@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="编辑资料"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#0d0d0d"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="63dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f2f2f2"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/tv_input_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="4/8"
+            android:layout_marginBottom="12dp"
+            android:textSize="10sp"
+            android:textColor="#999999"/>
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:layout_toLeftOf="@id/tv_input_label"
+            android:layout_marginBottom="12dp"
+            android:textColor="#0d0d0d"
+            android:textSize="14sp"
+            android:hint="请输入昵称"
+            android:inputType="text"
+            android:maxLength="15"
+            android:layout_marginRight="8dp"/>
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:layout_toLeftOf="@id/tv_input_label"
+            android:layout_marginBottom="12dp"
+            android:textColor="#0d0d0d"
+            android:textSize="14sp"
+            android:hint="请输入简介"
+            android:inputType="text"
+            android:maxLength="30"
+            android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+
+    <com.shunlai.ui.FlexView
+        android:id="@+id/label_flex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:maxLine="20"
+        app:margin_width="12dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="40dp"
+        android:visibility="gone">
+
+    </com.shunlai.ui.FlexView>
+
+    <LinearLayout
+        android:id="@+id/ll_empty_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="112dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/label_empty_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无社区徽章"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#B2B2B2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/black_radius_2_bg"
+        android:layout_alignParentBottom="true"
+        android:text="确定"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="74dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

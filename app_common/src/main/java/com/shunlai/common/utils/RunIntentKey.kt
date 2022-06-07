@@ -1,0 +1,62 @@
+package com.shunlai.common.utils
+
+/**
+ * @author Liu
+ * @Date   2021/9/2
+ * @mobile 18711832023
+ */
+object RunIntentKey {
+    const val MATCH_RESULT="MATCH_RESULT"
+    const val WEB_URL="web_url"
+    const val WEB_TITLE="web_title"
+    const val UGC_SEARCH_KEY="searchKey"
+    const val UGC_ID="ugcId"
+    const val UGC_TYPE="ugcType"
+    const val UGC_CONTENT="ugc_content"
+    const val PRODUCT_ID="productId"
+    const val PUBLISH_TYPE="publishType"
+    const val PUBLISH_GOODS="publishGoods"
+    const val SIGN_GOODS_LIST="sign_goods_list"
+    const val CHOOSE_IMAGE_ITEM="choose_img_item"
+    const val CHOOSE_IMAGE_ITEM_RESOURCE="choose_img_item_resource"
+    const val CHOOSE_IMAGE_INDEX="choose_img_index"
+    const val CHOOSE_GOODS="choose_goods"
+    const val SEARCH_RESULT="search_result"
+    const val SEARCH_KEY="search_key"
+    const val IS_NEED_SAVE="is_need_save"
+    const val PUBLISH_SAVE="pub_save_bean"
+    const val MEMBER_ID="memberId"
+    const val IS_FROM_HOME="isFromHome"
+    const val CAMERA_IMG_PATH="camera_image_path"
+    const val CAMERA_VIDEO_PATH="camera_video_path"
+    const val HT_DETAIL="ht_detail"
+    const val UGC_HT="ugc_ht"
+    const val IS_SHOW_COMMENT="isShowComment"
+    const val IS_ONLY_PICKER="is_only_picker"
+    const val IS_NEED_VIDEO="is_need_video"
+    const val LIMIT_SIZE="limit_size"
+    const val TO_USER_ID="toUserId"
+    const val TO_USER_NAME="toUserName"
+    const val ORDER_BEAN="orderBean"
+    const val SCENE_KEY="sceneId"
+    const val MODEL_ID="modelId"
+    const val MEMBER_NAME="memberName"
+    const val MEMBER_AVATAR="memberName"
+    const val MEMBER_INFO="memberInfo"
+    const val GOODS="goods"
+    const val TYPE="type"
+    const val PHONE="phone"
+    const val SHOP_MEMBER_ID="shopMemberId"
+    const val USER_TYPE="userType"
+    const val WALL_PHOTO_LIST="wallPhotoList"
+    const val SIGN_BOARD="signBoard"
+    const val LOGIN_TYPE="loginType"
+    const val GOODS_TYPE="goodType"
+    const val IMAGE_URL="imgUrl"
+    const val USER_ID="userId"
+    const val POSTER_IMG_URL="post_img_url"
+    const val CID="cid"
+    const val DEVICE_CHANNEL="deviceChannel"
+
+
+}

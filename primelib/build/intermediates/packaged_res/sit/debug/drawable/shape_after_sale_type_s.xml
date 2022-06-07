@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/c_radio_btn_soild"/>
+    <stroke android:color="@color/c_title"
+        android:width="@dimen/d_common_stroke_w"/>
+    <corners android:radius="@dimen/d_order_detail_pay_h"/>
+</shape>

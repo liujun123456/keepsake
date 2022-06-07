@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#88000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_top_radius_15"
+        android:layout_marginTop="44dp"
+        android:paddingTop="24dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_close_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/mine_black_close_icon"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择笔记"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="#0d0d0d"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="#0d0d0d"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1a000000">
+            <RelativeLayout
+                android:id="@+id/rl_sign_content"
+                android:layout_width="match_parent"
+                android:layout_height="288dp">
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="236dp"
+                    android:background="@mipmap/image_sign_2"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+                    <ImageView
+                        android:id="@+id/iv_ugc_image"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"/>
+                    <TextView
+                        android:id="@+id/tv_ugc_title"
+                        android:layout_width="96dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/white_16_radius"
+                        android:layout_marginTop="8dp"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="#191919"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:focusableInTouchMode="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.shunlai.ui.srecyclerview.SRecyclerView
+                android:id="@+id/rv_mine_ugc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7"
+                android:layout_below="@id/rl_sign_content"
+                app:canRefresh="false"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

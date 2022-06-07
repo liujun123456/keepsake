@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_16_radius"
+        android:paddingBottom="16dp">
+        <ImageView
+            android:id="@+id/ugc_img"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:src="@mipmap/default_icon"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_ugc_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#E6000000"
+            android:minHeight="34dp"
+            android:text="初秋的山城夜色,淡橘的色彩,寂靜的空氣, 讓人忍官方发..."
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+            <ImageView
+                android:id="@+id/iv_user_avatar"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/user_default_icon"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_user_avatar"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="沉默的Kavince"
+                android:textColor="#0D0D0D"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_fabulous_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0D0D0D"
+                android:textSize="11sp"
+                android:text="2385"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:id="@+id/iv_fabulous_label"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_toLeftOf="@id/tv_fabulous_count"
+                android:src="@mipmap/un_fabulous_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

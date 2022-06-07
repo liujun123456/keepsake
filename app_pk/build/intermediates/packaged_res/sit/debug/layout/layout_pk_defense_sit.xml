@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F7F7F7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/sit_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/sit_border_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/defense_sit_radius_border_line_red">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_1"
+            android:background="@drawable/defense_sit_radius_white_line">
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sit_tag_layout"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:visibility="gone"
+        android:background="@drawable/tag_sit_radius_red_bg">
+        <TextView
+            android:id="@+id/sit_tag_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_centerInParent="true"
+            android:text="@string/sit_red"
+            android:textColor="@color/cardview_light_background">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

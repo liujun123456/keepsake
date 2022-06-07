@@ -1,0 +1,140 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.shunlai.keepsake"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1061
+        versionName "1.0.61"
+        flavorDimensions "default"
+
+        ndk {
+            abiFilters 'arm64-v8a','armeabi-v7a'
+        }
+
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'hospital'
+            keyPassword 'Cpic1234'
+            storeFile file('../hospital')
+            storePassword 'Cpic1234'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug{
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+
+    productFlavors{
+        sit{
+            applicationId "com.shunlai.keepsake.sit"
+            resValue "string", "app_name", "透壳sit"
+            manifestPlaceholders=[
+                APP_ID: "com.shunlai.keepsake.sit",
+                GETUI_APPID       : "199401Dk9d8fHJ9fL0dLS8",
+                PUSH_APPID       : "199401Dk9d8fHJ9fL0dLS8",
+                GS_APPID       : "199401Dk9d8fHJ9fL0dLS8",
+                GT_INSTALL_CHANNEL      : "sit",
+                TOKEN_CHANNEL : "sit",
+
+
+                // 华为 相关应用参数
+                HUAWEI_APP_ID  : "104408505",
+
+                // 小米相关应用参数
+                XIAOMI_APP_ID  : "2882303761520042994",
+                XIAOMI_APP_KEY : "5672004297994",
+
+                // OPPO 相关应用参数
+                OPPO_APP_KEY   : "a845a870a9f045aab08e3ac05a947850",
+                OPPO_APP_SECRET: "2736430ffce748a5837ecb04ed0e07cb",
+
+                // VIVO 相关应用参数
+                VIVO_APP_ID    : "105492650",
+                VIVO_APP_KEY   : "100dc226a8d71b09219e1cc85d552d5c",
+            ]
+
+
+        }
+        pro{
+            applicationId "com.shunlai.keepsake"
+            resValue "string", "app_name", "透壳"
+            manifestPlaceholders=[
+                APP_ID: "com.shunlai.keepsake",
+                GETUI_APPID       : "BM11C9FEwK7uh6Gk2GTVR6",
+                PUSH_APPID       : "BM11C9FEwK7uh6Gk2GTVR6",
+                GS_APPID       : "BM11C9FEwK7uh6Gk2GTVR6",
+                GT_INSTALL_CHANNEL      : "pro",
+                TOKEN_CHANNEL : "pro",
+
+                // 华为 相关应用参数
+                HUAWEI_APP_ID  : "104408505",
+
+                // 小米相关应用参数
+                XIAOMI_APP_ID  : "2882303761519974957",
+                XIAOMI_APP_KEY : "5621997420957",
+
+                // OPPO 相关应用参数
+                OPPO_APP_KEY   : "a845a870a9f045aab08e3ac05a947850",
+                OPPO_APP_SECRET: "2736430ffce748a5837ecb04ed0e07cb",
+
+                // VIVO 相关应用参数
+                VIVO_APP_ID    : "105492650",
+                VIVO_APP_KEY   : "100dc226a8d71b09219e1cc85d552d5c",
+            ]
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs', '../fun_plugin/app_third/libs'
+    }
+}
+
+
+dependencies {
+    implementation project(path:":fun_plugin:app_router")
+    implementation project(path:":fun_plugin:app_net")
+    implementation project(path:":fun_plugin:app_im")
+    implementation project(path:":fun_plugin:app_third")
+    implementation project(path:":fun_plugin:app_location")
+    implementation project(path:":fun_plugin:app_share")
+    implementation project(path:":app_common")
+    implementation project(path:":app_publish")
+    implementation project(path:":app_message")
+    implementation project(path:":app_main")
+    implementation project(path:":app_mine")
+    implementation project(path:":app_ugc")
+
+}

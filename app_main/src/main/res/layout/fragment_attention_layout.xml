@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F7F7"
+    android:animateLayoutChanges="true">
+    <com.shunlai.ui.srecyclerview.SRecyclerView
+        android:id="@+id/rv_attention"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:head_height="64dp"/>
+    <com.shunlai.ui.srecyclerview.SRecyclerView
+        android:id="@+id/rv_tui_jian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:canLoadMore="false"
+        app:head_height="64dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_have_no_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂时没有推荐"
+            android:textSize="16sp"
+            android:textColor="#b2b2b2"/>
+
+        <TextView
+            android:id="@+id/tv_go_discover"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:text="先去逛逛"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/black_radius_24dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

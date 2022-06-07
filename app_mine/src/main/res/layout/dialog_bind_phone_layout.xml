@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="315dp"
+    android:layout_height="276dp"
+    android:background="@drawable/white_16_radius">
+    <ImageView
+        android:layout_width="139dp"
+        android:layout_height="91dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/bind_phone_notice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="163dp"
+        android:text="为了您的账户安全，请绑定手机号"
+        android:textSize="15sp"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_un_accept"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/gray_empty_radius_20"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="不允许"
+        android:textSize="14sp"
+        android:textColor="#0d0d0d"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_accept"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/black_radius_24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="允许"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

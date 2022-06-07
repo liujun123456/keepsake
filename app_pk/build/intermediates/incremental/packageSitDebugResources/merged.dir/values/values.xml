@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_19">#191919</color>
+    <color name="color_black_30">#4d000000</color>
+    <color name="color_black_40">#66000000</color>
+    <color name="color_black_5">#0d000000</color>
+    <color name="color_black_90">#e6000000</color>
+    <color name="color_main_bg">#F7F7F7</color>
+    <color name="color_od">#0D0D0D</color>
+    <color name="color_sit_blue">#4981F2</color>
+    <color name="color_sit_blue_10">#194981F2</color>
+    <color name="color_sit_blue_30">#7F4981f2</color>
+    <color name="color_sit_blue_judgment">#17294D</color>
+    <color name="color_sit_red">#F24957</color>
+    <color name="color_sit_red_10">#19F24957</color>
+    <color name="color_sit_red_30">#7Ff24957</color>
+    <color name="color_sit_red_judgment">#4D171C</color>
+    <color name="color_white">#fff</color>
+    <color name="color_white_70">#B2FFFFFF</color>
+    <string name="commnet_title">评论（%d）</string>
+    <string name="default_input_str">说说你的观点</string>
+    <string name="follow_str">关注</string>
+    <string name="had_join_member_str">%d人参与</string>
+    <string name="other_say_str">看看大家怎么说</string>
+    <string name="pk_huti_not_my_str">暂未参与PK话题</string>
+    <string name="pk_huti_not_str">暂无PK话题</string>
+    <string name="pk_join_member_count_str">%d人参与</string>
+    <string name="publish_pk_view_hit">关于「%s」，我想说…</string>
+    <string name="sit_blue">蓝方</string>
+    <string name="sit_blue_view">蓝方观点</string>
+    <string name="sit_change_value">选择「%s」</string>
+    <string name="sit_red">红方</string>
+    <string name="sit_red_view">红方观点</string>
+    <string name="sit_result_str">已选「%s」</string>
+    <string name="sit_shared_str">分享</string>
+    <string name="sit_view_point_tip">说说你支持的理由</string>
+    <string name="thing_str">正在思考中</string>
+    <string name="toking_str">正在讨论</string>
+    <declare-styleable name="SDPKDefenseSitLayout">
+        <attr format="integer" name="sit_for"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sign_product_card_bg"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginLeft="16dp">
+        <ImageView
+            android:id="@+id/iv_product_img"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/default_icon"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv_sign_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_product_img"
+            android:textColor="#E6000000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginRight="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="苹果2020款 air pro无线蓝牙耳机降噪处理，保证正品，反对非法的丰苹果2020款 air pro无线蓝牙耳机降噪处理，保证正品，反对非法的丰富"/>
+
+        <LinearLayout
+            android:id="@+id/ll_sign_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_product_img"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥ "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#0d0d0d"/>
+            <TextView
+                android:id="@+id/tv_sign_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,800"
+                android:textSize="20sp"
+                android:textColor="#0d0d0d"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_delete_card"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/iv_delete_img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/oval_black_close"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="16dp">
+        <RelativeLayout
+            android:id="@+id/rl_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@mipmap/recommend_normal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="推荐"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableLeft="@mipmap/recommend_icon"
+                android:gravity="center"
+                android:drawablePadding="4dp"/>
+
+            <ImageView
+                android:id="@+id/iv_recommend_choose"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/radio_check_icon"
+                android:layout_marginLeft="12dp"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_un_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@mipmap/no_recommend_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="避雷"
+                android:textColor="#E6000000"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableLeft="@mipmap/un_recommend_icon"
+                android:gravity="center"
+                android:drawablePadding="4dp"/>
+
+            <ImageView
+                android:id="@+id/iv_un_recommend_choose"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/radio_check_icon"
+                android:layout_marginRight="12dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

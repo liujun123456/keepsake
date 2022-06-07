@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp"
+    android:id="@+id/rl_item_view">
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/user_default_icon"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="害怕猫叫"
+            android:textSize="14sp"
+            android:textColor="#191919"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 小时前"
+            android:textSize="13sp"
+            android:textColor="#999999"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/action_attention_bg"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="关注"
+            android:textSize="13sp"
+            android:textColor="#191919"
+            android:drawablePadding="2dp"
+            android:drawableLeft="@mipmap/black_plus_icon"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_img_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/rl_user"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这个人蛮有趣"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/ll_img_video_layout"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>

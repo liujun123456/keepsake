@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#a6000000"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:background="@drawable/white_top_radius_15"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/iv_close_window"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@mipmap/window_close_icon"
+            android:layout_alignParentRight="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_token_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Token分   2567"
+                    android:textColor="#181818"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/query_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/gray_18_radius_bg"
+                    android:layout_alignParentRight="true"
+                    android:text="查看更多"
+                    android:textColor="#0d0d0d"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="在透壳分享商品、收获评论和点赞、笔记被精选，都会增加Token分。同时如果被投诉、差评会减少Token分，未来分数可以用来享受各种福利。"
+                android:textColor="#181818"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="社区互动"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_communityInteraction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="内容精选"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_contentSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="品牌影响力"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_brandInfluence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+

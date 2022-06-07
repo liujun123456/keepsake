@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f7f7f7"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:id="@+id/search_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_search_ugc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/search_choose_tab_index_bg"
+            android:drawablePadding="4dp"
+            android:text="笔记"
+            android:gravity="center"
+            android:textColor="#0D0D0D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_search_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="48dp"
+            android:drawableBottom="@drawable/search_un_choose_tab_index_bg"
+            android:drawablePadding="4dp"
+            android:text="用户"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#0D000000"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/search_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_tab"/>
+
+</LinearLayout>

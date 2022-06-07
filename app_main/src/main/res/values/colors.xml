@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_icon_choose">#191919</color>
+    <color name="app_icon_un_choose">#999999</color>
+
+    <color name="app_icon_choose_2">#ffffff</color>
+    <color name="app_icon_un_choose_2">#f2f2f2</color>
+</resources>

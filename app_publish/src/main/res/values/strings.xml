@@ -1,0 +1,39 @@
+<resources>
+    <string name="album_name_all">所有文件</string>
+    <string name="hint_title">好的标题会有更多曝光</string>
+    <string name="hint_content">说说买东西的心得，分享好物，晒一下你的真实感受 </string>
+    <string name="hint_product_search">关键词搜索，或京东，淘宝商品链接及口令</string>
+    <string name="star_notice">你觉得几颗星？</string>
+    <string name="star_notice_one">很差</string>
+    <string name="star_notice_two">较差</string>
+    <string name="star_notice_three">还行</string>
+    <string name="star_notice_four">推荐</string>
+    <string name="star_notice_recommend">力荐</string>
+    <string name="clip_text">粘贴并解析</string>
+    <string name="clip_text_has_value">粘贴并解析%1$d/3</string>
+    <string name="clip_notice_text">请先复制口令或者关键字!</string>
+    <string name="price_text">￥%1$s</string>
+    <string name="sign_max_notice">最多表态三个商品</string>
+    <string name="sign_notice">需要先标记商品</string>
+    <string name="sign_star_notice">请先完成表态</string>
+    <string name="un_search_goods">未识别到商品</string>
+    <string name="sign_title">标记商品</string>
+    <string name="complete_text">完成</string>
+    <string name="wish_text">心愿单</string>
+    <string name="no_goods_text">没找到分享链接，添加</string>
+    <string name="complete_wish_fail">添加心愿单失败</string>
+    <string name="check_brandName">请输入品牌名</string>
+    <string name="check_goods_name">请输入商品名称</string>
+    <string name="check_img">请添加图片</string>
+    <string name="taobao_text">淘宝价</string>
+    <string name="jd_text">京东价</string>
+    <string name="publish_title">发布笔记</string>
+
+    <string name="photo_long_click_notice">已选 %1$d/%2$d    长按素材可排序</string>
+    <string name="max_choose_size">最多选中%1$d个文件!</string>
+
+    <string name="publish_title_notice">请输入笔记标题</string>
+    <string name="publish_content_notice">请输入笔记内容</string>
+    <string name="publish_img_notice">最少需要上传一张图片</string>
+
+</resources>

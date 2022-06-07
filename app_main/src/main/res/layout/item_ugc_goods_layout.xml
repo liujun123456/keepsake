@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/ugc_item_goods_bg">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/iv_product_img"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/default_icon" />
+
+            <TextView
+                android:id="@+id/tv_product_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/iv_product_img"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="56dp"
+                android:text="adidas 三叶草武士系列卡其色卡气死 三叶草武士系列卡其色…"
+                android:textColor="#191919"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ll_eva_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_toRightOf="@id/iv_product_img"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ugc_item_bl_bg"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/iv_eva_image"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@mipmap/un_recommend_icon"/>
+                <TextView
+                    android:id="@+id/tv_eva_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="避雷"
+                    android:textColor="#FF49264D"
+                    android:layout_marginLeft="4dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_go_eva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/eva_goods_icon"
+                android:text="去表态"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/good_eva_bg"
+                android:textColor="#E6000000"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:drawablePadding="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"/>
+
+
+
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统通知"
+            android:textSize="16sp"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_msg_content"
+            android:layout_below="@id/tv_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="#333333"
+            android:textSize="12sp"
+            android:text="亲爱的店主，您于2020.12.04 | 12:23上传的商品中“中华烟2条 正品直销…”审核未通过，上架失败，请您仔细阅读《顺来平台商品开放类目及准则》"/>
+
+        <TextView
+            android:id="@+id/tv_msg_time"
+            android:layout_below="@id/tv_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:text="12月01日"
+            android:textColor="#999999"
+            android:layout_marginTop="15dp"/>
+        <View
+            android:layout_below="@id/tv_msg_time"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="25dp"
+            android:background="#F4F4F4"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

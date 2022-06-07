@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StarLayout">
+        <attr name="chooseIcon" format="color|reference"/>
+        <attr name="unChooseIcon" format="color|reference"/>
+        <attr name="maxStar" format="integer"/>
+        <attr name="star_width" format="dimension"/>
+        <attr name="star_height" format="dimension"/>
+        <attr name="child_margin" format="dimension"/>
+        <attr name="isIndicator" format="boolean"/>
+        <attr name="rating" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SRecyclerView">
+        <attr name="head_height" format="dimension" />
+        <attr name="canLoadMore" format="boolean" />
+        <attr name="canRefresh" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlexView">
+        <attr name="margin_width" format="dimension"/>
+        <attr name="centerHorizontal" format="boolean"/>
+        <attr name="maxLine" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension"/>
+        <attr name="sb_shadow_offset" format="reference|dimension"/>
+        <attr name="sb_shadow_color" format="reference|color"/>
+        <attr name="sb_uncheck_color" format="reference|color"/>
+        <attr name="sb_checked_color" format="reference|color"/>
+
+        <attr name="sb_border_width" format="reference|dimension"/>
+        <attr name="sb_checkline_color" format="reference|color"/>
+        <attr name="sb_checkline_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_color" format="reference|color"/>
+        <attr name="sb_uncheckcircle_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>
+
+        <attr name="sb_checked" format="reference|boolean"/>
+        <attr name="sb_shadow_effect" format="reference|boolean"/>
+        <attr name="sb_effect_duration" format="reference|integer"/>
+        <attr name="sb_button_color" format="reference|color"/>
+        <attr name="sb_show_indicator" format="reference|boolean"/>
+        <attr name="sb_background" format="reference|color"/>
+        <attr name="sb_enable_effect" format="reference|boolean"/>
+
+        <attr name="sb_checkedbutton_color" format="reference|color"/>
+        <attr name="sb_uncheckbutton_color" format="reference|color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeView">
+        <attr name="textcolor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="isRepeat" format="boolean" />
+        <attr name="speed" format="integer"/>
+        <attr name="startPoint" format="integer">
+            <enum name="start" value="0"/>
+            <enum name="end" value="1"/>
+        </attr>
+        <attr name="direction" format="integer">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TokenStarView">
+        <attr name="is_auto_rotate" format="boolean"/>
+    </declare-styleable>
+
+</resources>

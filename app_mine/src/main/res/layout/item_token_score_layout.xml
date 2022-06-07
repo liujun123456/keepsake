@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="18dp">
+    <TextView
+        android:id="@+id/tv_score_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首次发表评论"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#0d0d0d"/>
+
+    <TextView
+        android:id="@+id/tv_score_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020/10/10 12:23"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/tv_score_name"/>
+
+    <TextView
+        android:id="@+id/tv_score_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="+50"
+        android:textSize="20sp"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

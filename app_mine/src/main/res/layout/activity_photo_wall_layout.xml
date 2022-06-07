@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <!--没有图片墙时的提示-->
+    <RelativeLayout
+        android:id="@+id/rl_empty_wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="227dp"
+            android:layout_height="144dp"
+            android:src="@mipmap/photo_wall_empty"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:text="发布笔记所关联的图片将 在这里展示，更方便找到同好哦！"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_empty"
+            android:gravity="center"
+            android:layout_marginTop="42dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+
+
+    </RelativeLayout>
+
+    <!--图片墙主体-->
+    <RelativeLayout
+        android:id="@+id/rl_wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_wall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/view_wall_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+    <!--自己无图片墙-->
+    <LinearLayout
+        android:id="@+id/ll_mine_no_wall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="「需要发布5张图片才能生成背景海报墙哦」"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/ll_go_publish"
+            android:layout_marginBottom="40dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_go_publish"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/blue_radius_20"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#181818"
+                android:textSize="18sp"
+                android:text="发布笔记"/>
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/arrow_left_back"
+                android:rotation="180"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--自己有图片墙，或者别人图片墙的情况-->
+    <LinearLayout
+        android:id="@+id/ll_mine_wall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="13dp"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_go_publish2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/blue_radius_20"
+            android:layout_marginTop="26dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#181818"
+                android:textSize="18sp"
+                android:text="发布笔记"/>
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/arrow_left_back"
+                android:rotation="180"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingRight="68dp"
+            android:paddingLeft="68dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/tv_user_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="曾细品一组老房子的旧照片，老武汉的繁华地
+守根里，上世纪20年代的石库门"
+                />
+            <LinearLayout
+                android:id="@+id/ll_un_attention_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_do_attention"
+                    android:layout_width="78dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/blue_radius_20"
+                    android:gravity="center"
+                    android:text="+ 关注"
+                    android:textSize="14sp"
+                    android:textColor="#181818"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/tv_go_chat"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/mine_go_chat"
+                    android:layout_marginLeft="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_attention_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/tv_go_chat_2"
+                    android:layout_width="64dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/iv_check_right"
+                    android:src="@mipmap/mine_go_chat_attention"/>
+                <ImageView
+                    android:id="@+id/iv_check_right"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/check_right_icon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--title-->
+    <RelativeLayout
+        android:id="@+id/rl_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingTop="@dimen/title_padding"
+        android:background="#00ffffff">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/mine_white_close"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="背景墙"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

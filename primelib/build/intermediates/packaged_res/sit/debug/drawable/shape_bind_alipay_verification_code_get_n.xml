@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/d_order_detail_pay_h"/>
+    <stroke android:color="@color/c_order_detail_btn_dividing"
+        android:width="@dimen/d_common_dividing"/>
+    <solid android:color="@android:color/transparent"/>
+</shape>

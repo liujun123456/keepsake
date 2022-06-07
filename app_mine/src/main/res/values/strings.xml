@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="star_notice">你觉得几颗星？</string>
+    <string name="star_notice_one">很差</string>
+    <string name="star_notice_two">较差</string>
+    <string name="star_notice_three">还行</string>
+    <string name="star_notice_four">推荐</string>
+    <string name="star_notice_recommend">力荐</string>
+</resources>

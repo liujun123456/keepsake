@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/tv_page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="账号与安全"
+        android:textColor="#0D0D0D"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_update_bind_phone"
+        app:layout_constraintTop_toBottomOf="@id/tv_page_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/phone_label_icon"
+            android:text="手机号"
+            android:textSize="16sp"
+            android:textColor="#0d0d0d"
+            android:drawablePadding="7dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_phone_value"
+            android:layout_below="@id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:text="已绑定：13997283712"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_update_phone"
+            android:layout_width="88dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="更换绑定"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="#191919"
+            android:background="@drawable/gray_empty_radius_20"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_update_bind_wechat"
+        app:layout_constraintTop_toBottomOf="@id/rl_update_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:id="@+id/tv_we_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/wechat_label_icon"
+            android:text="微信账号"
+            android:textSize="16sp"
+            android:textColor="#0d0d0d"
+            android:drawablePadding="7dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_we_chat_value"
+            android:layout_below="@id/tv_we_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:text="已绑定：Yang-lefy"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_update_we_chat"
+            android:layout_width="88dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="解除绑定"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="#191919"
+            android:background="@drawable/gray_empty_radius_20"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

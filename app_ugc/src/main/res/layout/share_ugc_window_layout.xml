@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:background="#a6000000">
+
+
+    <LinearLayout
+        android:id="@+id/share_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/white_top_radius_15"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+                <TextView
+                    android:id="@+id/tv_build_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/share_build_img"
+                    android:text="生成分享图"
+                    android:textColor="#66000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="28dp"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_share_we_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/share_we_chat_icon"
+                    android:text="微信好友"
+                    android:textColor="#66000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:drawablePadding="8dp"/>
+                <TextView
+                    android:id="@+id/tv_share_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/share_circle_icon"
+                    android:text="朋友圈"
+                    android:textColor="#66000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_share_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/share_qq_icon"
+                    android:text="QQ"
+                    android:textColor="#66000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_share_qq_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@mipmap/share_qq_zone_icon"
+                    android:text="QQ空间"
+                    android:textColor="#66000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="28dp"
+                    android:drawablePadding="8dp"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f4f4f4"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+            <TextView
+                android:id="@+id/tv_copy_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/share_copy_url"
+                android:text="复制链接"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="28dp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_complaint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/share_complaint"
+                android:text="举报"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/share_block"
+                android:text="拉黑该用户"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/share_delete_icon"
+                android:text="删除"
+                android:textColor="#66000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:layout_marginLeft="32dp"
+                android:drawablePadding="8dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#fff2f2f2"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/tv_cancel_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:textSize="15sp"
+            android:textColor="#99000000"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

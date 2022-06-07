@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/d_order_my_pad_b">
+    <TextView
+        android:id="@+id/tv_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/tv_logistics_infos_white"
+        android:paddingLeft="@dimen/d_order_my_pad_b"
+        android:paddingRight="@dimen/d_order_my_pad_b"
+        android:paddingTop="@dimen/d_toast_pad_t"
+        android:paddingBottom="@dimen/d_toast_pad_t"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="撒赖打开就饭卡里说的发"
+        android:background="@drawable/shape_toast_bg"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

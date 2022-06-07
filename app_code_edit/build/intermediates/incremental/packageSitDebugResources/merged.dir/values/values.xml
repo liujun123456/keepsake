@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">library</string>
+    <declare-styleable name="CodeEditText">
+        <!--正常边框、填充、下划线颜色-->
+        <attr format="color" name="blockNormalColor"/>
+        <!--获取焦点时边框、填充、下划线颜色-->
+        <attr format="color" name="blockFocusColor"/>
+        <!--输入错误时边框、填充、下划线颜色-->
+        <attr format="color" name="blockErrorColor"/>
+        <attr format="color" name="editBgColor"/>
+        <!--画边框及填充色是的圆角-->
+        <attr format="dimension" name="blockCorner"/>
+        <!--边框及下划线时线的宽度-->
+        <attr format="dimension" name="blockLineWidth"/>
+        <!--输入框间距-->
+        <attr format="dimension" name="blockSpace"/>
+        <!--边框、线、填充类型-->
+        <attr name="blockShape">
+            <!--边框-->
+            <enum name="stroke" value="1"/>
+            <!--填充-->
+            <enum name="solid" value="2"/>
+            <!--下划线-->
+            <enum name="underline" value="3"/>
+            <!--什么都不画的鬼东西-->
+            <enum name="none" value="-1"/>
+        </attr>
+        <!--显示样式 支持明文和密码两种，密码时画圆点-->
+        <attr name="codeInputType">
+            <!--密码-->
+            <enum name="password" value="1"/>
+            <!--明文-->
+            <enum name="text" value="2"/>
+            <!--什么都不画的鬼东西-->
+            <enum name="none" value="-1"/>
+        </attr>
+        <!--显示圆点、明文时的字体颜色-->
+        <attr format="color" name="codeTextColor"/>
+        <!--明文时字体大小-->
+        <attr format="dimension" name="codeTextSize"/>
+        <!--密码样式时圆点的半径-->
+        <attr format="dimension" name="dotRadius"/>
+        <!--输入码的最大长度-->
+        <attr format="integer" name="maxCodeLength"/>
+        <!--是否显示光标-->
+        <attr format="boolean" name="showCursor"/>
+        <!--光标闪烁间隔-->
+        <attr format="integer" name="cursorDuration"/>
+        <!--光标宽度-->
+        <attr format="dimension" name="cursorWidth"/>
+        <!--光标高度-->
+        <attr format="dimension" name="cursorHeight"/>
+        <!--光标颜色 没有设置时默认取 codeTextColor 颜色-->
+        <attr format="color|reference" name="cursorColor"/>
+    </declare-styleable>
+</resources>

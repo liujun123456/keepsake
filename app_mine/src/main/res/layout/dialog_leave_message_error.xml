@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="279dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_24_radius"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="24dp"
+    android:paddingBottom="24dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="留言内容涉嫌违规"
+        android:textSize="15sp"
+        android:textColor="#E6000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请检查并修改留言后再试哦"
+        android:textColor="#E6000000"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:background="@drawable/gray_empty_radius_20"
+        android:layout_marginTop="24dp"
+        android:text="返回修改"
+        android:textColor="#E6000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

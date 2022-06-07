@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <RelativeLayout
+        android:id="@+id/rl_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:paddingTop="@dimen/title_padding"
+        android:background="#00ffffff">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/mine_white_close"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="编辑背景墙"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:id="@+id/ll_edit"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_wall_edit"
+        android:layout_below="@+id/rl_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="227dp"
+        android:layout_height="144dp"
+        android:src="@mipmap/photo_wall_empty"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还没有图片哦！"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_empty"
+        android:gravity="center"
+        android:layout_marginTop="42dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

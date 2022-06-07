@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:id="@+id/content_view">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/white_16_radius">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_comment_img"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:src="@mipmap/default_icon"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:id="@+id/tv_comment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#0D0D0D"
+                android:text="秋色山林的美好青春"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginLeft="12dp"
+                />
+            <com.shunlai.ui.StarLayout
+                android:id="@+id/sl_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:child_margin="3dp"
+                app:chooseIcon="@mipmap/star_choose"
+                app:isIndicator="true"
+                app:maxStar="5"
+                app:rating="5"
+                app:star_height="13dp"
+                app:star_width="13dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="12dp"
+                app:unChooseIcon="@mipmap/star_un_choose"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp">
+                <TextView
+                    android:id="@+id/tv_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥ "
+                    android:textSize="12sp"
+                    android:textColor="#F279A2"/>
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#F279A2"
+                    android:text="--"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

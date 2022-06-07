@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="#a6000000"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/white_top_radius_15"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_close"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_horizontal">
+            <View
+                android:layout_width="63dp"
+                android:layout_height="6dp"
+                android:background="@drawable/gray_18_radius_bg"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textSize="18sp"
+            android:textColor="#0D0D0D"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:id="@+id/go_all_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部订单"
+            android:drawableTop="@mipmap/order_icon"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="4dp"
+            android:textColor="#0D0D0D"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F7F7F7"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:textSize="18sp"
+            android:textColor="#0D0D0D"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp">
+            <TextView
+                android:id="@+id/tv_go_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:drawableTop="@mipmap/setting_icon"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="4dp"
+                android:textColor="#0D0D0D"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_share_to_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐好友"
+                android:drawableTop="@mipmap/share_to_friend"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="42dp"
+                android:drawablePadding="4dp"
+                android:textColor="#0D0D0D"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

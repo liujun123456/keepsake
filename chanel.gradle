@@ -1,0 +1,23 @@
+android{
+
+    flavorDimensions "default"
+
+    productFlavors{
+        sit{
+            buildConfigField "String", "HTTP_URL", "\"http://sit.chengbai-tech.com\""
+//            buildConfigField "String", "HTTP_URL", "\"http://192.168.1.167:8082\""
+//            buildConfigField "String", "HTTP_URL", "\"http://192.168.1.184:8082\""
+            buildConfigField "String",  "WE_CHAT_APP_KEY", "\"wxe5b92e64f1826ca2\""
+            buildConfigField "String",  "QQ_APP_KEY", "\"1112070572\""
+            buildConfigField "String",  "BUGLY_ID", "\"790055d743\""
+        }
+        pro{
+            buildConfigField "String", "HTTP_URL", "\"https://chengbai-tech.com\""
+            buildConfigField "String",  "WE_CHAT_APP_KEY", "\"wxe1d49a816081621e\""
+            buildConfigField "String",  "QQ_APP_KEY", "\"1112070572\""
+            buildConfigField "String",  "BUGLY_ID", "\"7c23866700\""
+        }
+
+    }
+}
+

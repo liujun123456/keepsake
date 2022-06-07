@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF0D0D0D">
+    <com.shunlai.ui.tokenstar.ParticleSkyView
+        android:id="@+id/sky_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/ll_match_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="@dimen/title_padding"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shop_white_close"
+                android:layout_centerVertical="true"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_match"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_match_title"
+        android:background="@drawable/match_loading_bg"
+        android:layout_marginTop="88dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_match"
+        android:layout_marginTop="16dp"
+        android:text="正在匹配"
+        android:textSize="18sp"
+        android:textColor="#FF2EE6D6"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

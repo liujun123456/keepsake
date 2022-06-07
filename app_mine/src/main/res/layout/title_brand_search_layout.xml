@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brand_search_bg"
+        android:layout_toLeftOf="@id/tv_cancel_search"
+        android:layout_centerVertical="true"
+        android:transitionName="search_transition"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <EditText
+            android:id="@+id/et_search_brand"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="输入你喜欢的品牌"
+            android:imeOptions="actionSearch"
+            android:layout_marginRight="20dp"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textColor="#191919"
+            android:textColorHint="#B2B2B2"
+            android:background="@null"
+            android:inputType="text"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_clear_input"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/mine_oval_black_close"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:textSize="15sp"
+        android:textColor="#191919"/>
+
+</RelativeLayout>
